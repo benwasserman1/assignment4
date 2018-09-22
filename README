@@ -1,0 +1,38 @@
+Ben Wasserman
+2280906
+wasse114@mail.chapman.edu
+CPSC 350 Section 3
+Assignment #4: Registrar's Office
+
+Source Files:
+  1. Registrar.cpp (Contains three classes: Registrar, Student, and Window)
+  2. main.cpp
+
+  NOTE: There are also 3 header files, 2 of which contain implementations of
+  data structures. ListNode.h defines a node, and a doubly linked list. Queue.h
+  uses the doubly linked list implementation to create a queue. The program uses
+  both of these data structures extensively.
+
+Description of potential deviations from specifications:
+
+  There are a few things I would like to clarify about how I calculated the statistics
+  because I want to ensure that my methods are clear, and don't deviate from how they
+  are supposed to be implemented or how I meant them to be implemented. First off, when the
+  queue is empty and the last students are sent to visit a window, any windows that may be
+  open in addition to that window are not considered idle on that last time unit because there
+  is no longer a line. Second, the number of windows that are idle for over 5 minutes calculates
+  the number of instances of a window being idle for over 5 minutes at once rather than just
+  total. I assume this is implied, but want to clarify. Finally, the mean window idle time
+  is calculated by the total window idle time divided by the number of windows.
+
+Partner:
+  NA
+
+References:
+  1. https://o6ucs.files.wordpress.com/2012/11/data-structures-and-algorithms-in-c.pdf
+    a. Used for reference on my queue implementation.
+  2. https://stackoverflow.com/questions/4798578/c-templates-problem-convert-to-null
+    a. Used for reference on an issue I was having with my templated queue returning a
+    specific data type.
+  3. https://stackoverflow.com/questions/9695329/c-how-to-round-a-double-to-an-int
+    a. Used for reference on casting syntax
